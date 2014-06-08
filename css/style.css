@@ -7,12 +7,7 @@ blockquote:before, blockquote:after,
 q:before, q:after{content:''; content:none}
 
 
-
-
-
-
 header{
-
  margin:auto;
 }
 #container {
@@ -33,7 +28,6 @@ header h1{
  
  margin-top:2px;
 }
-
 footer p{
  font-family:Tahoma, Geneva, sans-serif;
  font-weight:600;
@@ -42,14 +36,35 @@ footer p{
  padding:30px 0;
 }
 
-
 /*untuk responsive image*/
 .post img {
  width:100%;
  height:auto;
 }
 
-
-
-
-
+.pagination {
+  text-align: center;
+  padding: 1em;
+  cursor: default; 
+  line-height: 2.2em;
+}
+  .pagination a, .pagination span {
+    padding: 0.2em .4em; 
+}
+  .pagination span {
+    color: #aaa; }
+  .pagination em {
+    font-style: normal;
+    font-weight: bold;
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    line-height: 1.5;
+	
+    color: #aaa;
+}
+  .pagination a {
+    text-decoration: none;
+    color: #aaa; border: 1px solid #aaa;}
+    .pagination a:hover, .pagination a:focus {
+      text-decoration: none; color: #000; border: 1px solid #000;}
