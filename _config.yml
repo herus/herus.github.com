@@ -2,5 +2,5 @@ name: Ahnaf
 markdown: rdiscount
 pygments: true
 permalink: /:title/
-paginate: 6
+paginate: 10
 paginate_path: "page:num"
