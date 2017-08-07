@@ -143,19 +143,20 @@ background:#fff;
 .lb-data {
 padding: 0 5px;
 color: #888;
-font-family: Tahoma, Geneva, sans-serif;
 }
 
 .lb-data .lb-details {
-  width: 100%;
-  float: left;
-  text-align: left;
-  line-height: 1.1em;
+    padding-bottom: .5em;
+    background: white;
+    width: 100%;
+    float: left;
+    text-align: center;
+    line-height: 1.1em;
 }
 
 .lb-data .lb-caption {
+	 font-family: icomoon;
   font-size: 13px;
-  font-weight: bold;
   line-height: 1em;
    padding-bottom: 1em;
 }
@@ -167,3 +168,5 @@ font-family: Tahoma, Geneva, sans-serif;
 .lb-data .lb-close {
   display: none;
 }
+
+
