@@ -15,8 +15,7 @@ header{
  margin:auto;
 }
 header h1 {
-    color: white;
-    font-weight: 600;
+    color: #aaa;
     text-align: center;
     font-size: 24px;
     padding: 30px 0;
@@ -55,18 +54,21 @@ margin:15px 0;
 }
   .pagination span {
     color: #aaa; }
-  .pagination em {
-    font-style: normal;
-    font-weight: bold;
+.pagination em {
+    text-decoration: underline;
+    font-style: inherit;
+    /* font-weight: bold; */
     display: inline-block;
     width: 1.4em;
     height: 1.4em;
     line-height: 1.5;
-	
     color: #aaa;
 }
-  .pagination a {
+.pagination a {
     text-decoration: none;
-    color: #aaa; border: 1px solid #aaa;}
-    .pagination a:hover, .pagination a:focus {
-      text-decoration: none; color: #000; border: 1px solid #000;}
+    color: #aaa;
+}
+.pagination a:hover, .pagination a:focus {
+    text-decoration: underline;
+    color: #aaa;
+}
