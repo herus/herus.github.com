@@ -4,7 +4,7 @@ $(document).ready(function(){
  //untuk menentukan padding rightnya atau rongga batas kolom
  var gutter = 5;
  //lebar kolom yang otomatis akan menentukan jumlah kolom yang akan di tampilkan
- var min_width = 150;
+ var min_width = 200;
  $container.imagesLoaded( function(){
  $container.masonry({
  //class untuk bagian dimana konten anda di tempatkan biasanya dibuat dengan class post
