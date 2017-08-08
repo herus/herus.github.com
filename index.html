@@ -1,10 +1,46 @@
----
-layout: default
-title: Ahnaf Galery
----
+<html>
+  <head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-<!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-    {{ post.content }}
-{% endfor %}
+    <link href="/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/dist/jquery.nanogallery2.min.js"></script>
+
+  </head>
+  <body>
+
+    <h1>Gallery made with nanogallery2</h1>
+
+    <div data-nanogallery2='{
+        "itemsBaseURL": "http://nanogallery2.nanostudio.org/samples/",
+        "thumbnailWidth": "160",
+        "thumbnailHeight": "auto",
+        "thumbnailBorderVertical": 0,
+        "thumbnailBorderHorizontal": 0,
+        "thumbnailDisplayInterval": 30,
+        "thumbnailLabel": {
+          "display": false
+        },
+        "thumbnailHoverEffect2": "",
+        "galleryDisplayMode": "pagination",
+        "galleryMaxItems": null,
+        "thumbnailGutterWidth": 4,
+        "thumbnailGutterHeight": 4
+      }'>
+      <a href="http://4.bp.blogspot.com/-q5s-OHrMtLc/U59JvR-AXdI/AAAAAAAAAdo/GNVaOKIky0Y/s800/C360_2014-04-27-12-45-08-121.jpg" data-ngthumb="http://4.bp.blogspot.com/-q5s-OHrMtLc/U59JvR-AXdI/AAAAAAAAAdo/GNVaOKIky0Y/s800/C360_2014-04-27-12-45-08-121.jpg" data-ngdesc="">test1</a>
+      <a href="http://4.bp.blogspot.com/-NC-jAe54Rjw/U587KK-64xI/AAAAAAAAAcM/NgW7F_iAbtA/s800/C360_2014-04-22-09-17-47-358.jpg" data-ngthumb="http://4.bp.blogspot.com/-NC-jAe54Rjw/U587KK-64xI/AAAAAAAAAcM/NgW7F_iAbtA/s800/C360_2014-04-22-09-17-47-358.jpg" data-ngdesc="">Berlin 2</a>
+      <a href="http://4.bp.blogspot.com/-Vp-A-yJOLec/U587H0zrCMI/AAAAAAAAAcE/GEfKHgZ9dwo/s800/C360_2014-04-22-11-20-56-649.jpg" data-ngthumb="http://4.bp.blogspot.com/-Vp-A-yJOLec/U587H0zrCMI/AAAAAAAAAcE/GEfKHgZ9dwo/s800/C360_2014-04-22-11-20-56-649.jpg" data-ngdesc="">Berlin 3</a>
+      <a href="http://4.bp.blogspot.com/-Q-uLpzVEyyk/U587O7H3RpI/AAAAAAAAAcY/k4qaJd_q2GM/s800/C360_2014-04-25-08-53-33-859.jpg" data-ngthumb="http://4.bp.blogspot.com/-Q-uLpzVEyyk/U587O7H3RpI/AAAAAAAAAcY/k4qaJd_q2GM/s800/C360_2014-04-25-08-53-33-859.jpg" data-ngdesc="">berlin 4</a>
+      <a href="http://4.bp.blogspot.com/-q5s-OHrMtLc/U59JvR-AXdI/AAAAAAAAAdo/GNVaOKIky0Y/s800/C360_2014-04-27-12-45-08-121.jpg" data-ngthumb="http://4.bp.blogspot.com/-q5s-OHrMtLc/U59JvR-AXdI/AAAAAAAAAdo/GNVaOKIky0Y/s800/C360_2014-04-27-12-45-08-121.jpg" data-ngdesc="">test1</a>
+      <a href="http://4.bp.blogspot.com/-NC-jAe54Rjw/U587KK-64xI/AAAAAAAAAcM/NgW7F_iAbtA/s800/C360_2014-04-22-09-17-47-358.jpg" data-ngthumb="http://4.bp.blogspot.com/-NC-jAe54Rjw/U587KK-64xI/AAAAAAAAAcM/NgW7F_iAbtA/s800/C360_2014-04-22-09-17-47-358.jpg" data-ngdesc="">Berlin 2</a>
+      <a href="http://4.bp.blogspot.com/-Vp-A-yJOLec/U587H0zrCMI/AAAAAAAAAcE/GEfKHgZ9dwo/s800/C360_2014-04-22-11-20-56-649.jpg" data-ngthumb="http://4.bp.blogspot.com/-Vp-A-yJOLec/U587H0zrCMI/AAAAAAAAAcE/GEfKHgZ9dwo/s800/C360_2014-04-22-11-20-56-649.jpg" data-ngdesc="">Berlin 3</a>
+      <a href="http://4.bp.blogspot.com/-Q-uLpzVEyyk/U587O7H3RpI/AAAAAAAAAcY/k4qaJd_q2GM/s800/C360_2014-04-25-08-53-33-859.jpg" data-ngthumb="http://4.bp.blogspot.com/-Q-uLpzVEyyk/U587O7H3RpI/AAAAAAAAAcY/k4qaJd_q2GM/s800/C360_2014-04-25-08-53-33-859.jpg" data-ngdesc="">berlin 4</a>
+      <a href="http://4.bp.blogspot.com/-q5s-OHrMtLc/U59JvR-AXdI/AAAAAAAAAdo/GNVaOKIky0Y/s800/C360_2014-04-27-12-45-08-121.jpg" data-ngthumb="http://4.bp.blogspot.com/-q5s-OHrMtLc/U59JvR-AXdI/AAAAAAAAAdo/GNVaOKIky0Y/s800/C360_2014-04-27-12-45-08-121.jpg" data-ngdesc="">test1</a>
+      <a href="http://4.bp.blogspot.com/-NC-jAe54Rjw/U587KK-64xI/AAAAAAAAAcM/NgW7F_iAbtA/s800/C360_2014-04-22-09-17-47-358.jpg" data-ngthumb="http://4.bp.blogspot.com/-NC-jAe54Rjw/U587KK-64xI/AAAAAAAAAcM/NgW7F_iAbtA/s800/C360_2014-04-22-09-17-47-358.jpg" data-ngdesc="">Berlin 2</a>
+      <a href="http://4.bp.blogspot.com/-Vp-A-yJOLec/U587H0zrCMI/AAAAAAAAAcE/GEfKHgZ9dwo/s800/C360_2014-04-22-11-20-56-649.jpg" data-ngthumb="http://4.bp.blogspot.com/-Vp-A-yJOLec/U587H0zrCMI/AAAAAAAAAcE/GEfKHgZ9dwo/s800/C360_2014-04-22-11-20-56-649.jpg" data-ngdesc="">Berlin 3</a>
+      <a href="http://4.bp.blogspot.com/-Q-uLpzVEyyk/U587O7H3RpI/AAAAAAAAAcY/k4qaJd_q2GM/s800/C360_2014-04-25-08-53-33-859.jpg" data-ngthumb="http://4.bp.blogspot.com/-Q-uLpzVEyyk/U587O7H3RpI/AAAAAAAAAcY/k4qaJd_q2GM/s800/C360_2014-04-25-08-53-33-859.jpg" data-ngdesc="">berlin 4</a>
+    </div>
+    
+  </body>
+</html>
