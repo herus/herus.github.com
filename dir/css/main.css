@@ -7,7 +7,7 @@ blockquote:before, blockquote:after,
 q:before, q:after{content:''; content:none}
 table{border-collapse:collapse; border-spacing:0}
 body {
-    background: #000;
+    background: #111;
     font: 16px/1.6 'Open Sans', sans-serif;
     font-weight: 400;
     color: #ddd;
@@ -25,13 +25,13 @@ article {
 }
 
 footer {
-    padding: 0 0 2em 0;
+    padding: 0 1em 2em;
     text-align: center;
     font-size: .8em;
 }
 
 footer a {
-    color: inherit;
+    color: #fff;
     border-bottom: 1px solid #ddd;
     text-decoration: none;
 }
