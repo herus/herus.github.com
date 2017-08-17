@@ -145,7 +145,10 @@ footer .columns { padding-bottom: 5em;}
 }  
 .info{margin-top:-10px;}
 .gambar img{ width:120px}
-
+.deskripsi span{
+    display: inline-block;
+    transform: rotate(180deg);
+}
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
