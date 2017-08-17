@@ -164,8 +164,8 @@ a:hover {
 }
 p.deskripsi{line-height:1.6em;
 }
-p.deskripsi a{color: #ccc}
-p.deskripsi a:hover{color: #eee}
+p.deskripsi a{color: #ccc; border-bottom: 1px solid #ccc;}
+p.deskripsi a:hover{color: #eee; border-bottom: 1px solid #eee;}
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
