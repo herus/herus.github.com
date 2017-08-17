@@ -152,17 +152,20 @@ footer .columns { padding-bottom: 5em;}
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-p.alamat a {
+a {
     text-decoration: none;
     color: #eee;
     border-bottom: 1px solid #eee;
 }
-p.alamat a:hover {
+a:hover {
     text-decoration: none;
     color: #ccc;
     border-bottom: 1px solid #ccc;
 }
-
+p.deskripsi{line-height:1.6em;
+}
+p.deskripsi a{color: #ccc}
+p.deskripsi a:hover{color: #eee}
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
