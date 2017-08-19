@@ -7,90 +7,11 @@
 * 12/29/2014
 */
 
-
-/* Table of contents
-––––––––––––––––––––––––––––––––––––––––––––––––––
-- Grid
-- Base Styles
-- Typography
-- Links
-- Buttons
-- Forms
-- Lists
-- Code
-- Tables
-- Spacing
-- Utilities
-- Clearing
-- Media Queries
-*/
-
-
-/* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container {
-  position: relative;
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box; }
-.column,
-.columns {
-  width: 100%;
-  float: left;
-  box-sizing: border-box; }
-
-  .one.column,
-  .one.columns                    { width: 4.66666666667%; }
-  .two.columns                    { width: 13.3333333333%; }
-  .three.columns                  { width: 22%;            }
-  .four.columns                   { width: 30.6666666667%; }
-  .five.columns                   { width: 39.3333333333%; }
-  .six.columns                    { width: 48%;            }
-  .seven.columns                  { width: 56.6666666667%; }
-  .eight.columns                  { width: 65.3333333333%; }
-  .nine.columns                   { width: 74.0%;          }
-  .ten.columns                    { width: 82.6666666667%; }
-  .eleven.columns                 { width: 91.3333333333%; }
-  .twelve.columns                 { width: 100%; margin-left: 0; }
-
-  .one-third.column               { width: 30.6666666667%; }
-  .two-thirds.column              { width: 65.3333333333%; }
-
-  .one-half.column                { width: 48%; }
-
-  /* Offsets */
-  .offset-by-one.column,
-  .offset-by-one.columns          { margin-left: 8.66666666667%; }
-  .offset-by-two.column,
-  .offset-by-two.columns          { margin-left: 17.3333333333%; }
-  .offset-by-three.column,
-  .offset-by-three.columns        { margin-left: 26%;            }
-  .offset-by-four.column,
-  .offset-by-four.columns         { margin-left: 34.6666666667%; }
-  .offset-by-five.column,
-  .offset-by-five.columns         { margin-left: 43.3333333333%; }
-  .offset-by-six.column,
-  .offset-by-six.columns          { margin-left: 52%;            }
-  .offset-by-seven.column,
-  .offset-by-seven.columns        { margin-left: 60.6666666667%; }
-  .offset-by-eight.column,
-  .offset-by-eight.columns        { margin-left: 69.3333333333%; }
-  .offset-by-nine.column,
-  .offset-by-nine.columns         { margin-left: 78.0%;          }
-  .offset-by-ten.column,
-  .offset-by-ten.columns          { margin-left: 86.6666666667%; }
-  .offset-by-eleven.column,
-  .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
-
-  .offset-by-one-third.column,
-  .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
-  .offset-by-two-thirds.column,
-  .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
-
-  .offset-by-one-half.column,
-  .offset-by-one-half.columns     { margin-left: 52%; }
+.container {position: relative;width: 100%;max-width: 500px;margin: 0 auto;padding: 0 20px;box-sizing: border-box; }
+.columns {width: 100%;float: left;box-sizing: border-box; }
+.four.columns { width: 30.6666666667%; }
+.twelve.columns { width: 100%; margin-left: 0; }
+.offset-by-four.columns { margin-left: 34.6666666667%; }
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -100,110 +21,54 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%; }
 body {
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: 1.5em;
   line-height: 1.6;
   font-weight: 400;
   font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
   background-color:#008b8b; color:#eee}
 
-
-
-/* Typography
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   font-weight: 300; }
-h1 {
-    font-size: 1.8rem;
-    line-height: 0;
-}
+h1 {font-size: 1.8rem; line-height: 0; }
 h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
 h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
 h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
 h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
 h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
-/* Larger than phablet */
-p {
-  margin-top: 0; }
-p.deskripsi{
-    line-height: 1;
-    font-size: .8em;
-    color: #ccc;
-}
+p { margin-top: 0; }
+p.deskripsi{ line-height: 1.6em; font-size: .8em; color: #ccc; padding-top: 0.5em; }
 header .columns { padding-top: 5em;}
 article .columns{ padding-top: 5em;}
 article .columns{padding-bottom: 5em;}
 footer .columns { padding-bottom: 5em;}
 .alamat, .keterangan{ text-align:center; margin:0; font-size: 1rem;}
-.keterangan {  color:#ccc;}
-.alamat {    font-size: 1.2rem;}
-
-.gambar, .info{
-    max-width: 120px;
-    margin: 0;
-}  
+.keterangan { color:#ccc; line-height:2em;}
+.alamat {font-size: 1.2rem;}
+.gambar, .info{max-width: 120px;margin: 0;}  
 .info{margin-top:-10px;}
 .gambar img{ width:120px}
-.deskripsi span{
-    display: inline-block;
-    transform: rotate(180deg);
-}
-
-/* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
-    text-decoration: none;
-    color: #eee;
-    border-bottom: 1px solid #eee;
-}
-a:hover {
-    text-decoration: none;
-    color: #ccc;
-    border-bottom: 1px solid #ccc;
-}
-p.deskripsi{line-height:1.6em;
-}
+.deskripsi span{display: inline-block; transform: rotate(180deg);}
+a {text-decoration: none;color: #eee;border-bottom: 1px solid #eee;}
+a:hover {text-decoration: none;color: #ccc;border-bottom: 1px solid #ccc;}
 p.deskripsi a{color: #ccc; border-bottom: 1px solid #ccc;}
 p.deskripsi a:hover{color: #eee; border-bottom: 1px solid #eee;}
-/* Clearing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/* Self Clearing Goodness */
-.container:after,
-.row:after,
-.u-cf {
-  content: "";
-  display: table;
-  clear: both; }
+.container:after, .row:after, .u-cf {content: "";display: table;clear: both; }
 
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*
-Note: The best way to structure the use of media queries is to create the queries
-near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons section and style it
-there.
-*/
-/* For devices larger than 550px */
-  @media only screen and (min-width: 550px) and (max-width:3000px){
-  .container {
-    width: 80%;	max-width: 550px; }
-  .column,
-  .columns {
-    margin-left: 4%; }
-  .column:first-child,
-  .columns:first-child {
-    margin-left: 0; }
+@media only screen and (min-width: 550px) and (max-width:3000px){
+.container { width: 80%;	max-width: 550px; }
+.column, .columns {margin-left: 4%; }
+.column:first-child, .columns:first-child {margin-left: 0; }
 }
-  @media only screen and (max-width: 549px) {
-  .container {
-    width: 90%;
-	max-width: 200px;
-    padding: 0; }
-	.four.columns {
-width: 100%;}	
+
+@media only screen and (max-width: 549px) {
+.container {width: 90%;max-width: 200px;padding: 0; }
+.four.columns {width: 100%;}	
 header, footer{text-align:center;}
 .gambar, .info{max-width: 150px; margin:0 auto;}
 .gambar img{ width:150px}
@@ -215,15 +80,11 @@ article .columns{padding-bottom: 2em;}
 footer .columns { padding-bottom: 2em;}
 }
 
-  @media only screen and (min-width:450px) and (max-width:549px){
-  .container {
-    width: 90%;
-	max-width: 450px;
-    padding: 0; }
-article .column, article .columns {
-width: 130px;}	
-  .four.columns { width: 30.6666666667%; }
-  header, footer{text-align:left;}
+@media only screen and (min-width:450px) and (max-width:549px){
+.container {width: 90%;max-width: 450px;padding: 0; }
+article .column, article .columns {width: 130px;}	
+.four.columns { width: 30.6666666667%; }
+header, footer{text-align:left;}
 .gambar, .info{max-width: 120px; margin:0;}
 .gambar img{ width:120px}
 .info{margin-top:-10px;}
@@ -231,5 +92,4 @@ header .columns { padding-top: 5em;}
 header .columns { padding-bottom: 0;}
 article .columns{ padding-top: 5em;}
 article .columns{padding-bottom: 5em;}
-  }
-
+}
